@@ -17,17 +17,17 @@ function PLUGIN:RenderScreenspaceEffects()
 			end
 		end
 		if (armorHealth <= 10) then
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask6", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		elseif (armorHealth <= 20) then
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask5", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		elseif (armorHealth <= 40) then
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask4", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		elseif (armorHealth < 60) then
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask3", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		elseif (armorHealth < 80) then
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask2", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		else
-			DrawMaterialOverlay( "morganicism/metroredux/gasmask/metromask1", 0.2 )
+			DrawMaterialOverlay( "", 0.2 )
 		end
 
 		if !LocalPlayer().enresp then

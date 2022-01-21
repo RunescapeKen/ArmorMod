@@ -34,7 +34,7 @@ function PLUGIN:PlayerHurt( client, attacker, health, damageTaken )
 		local items = inventory:GetItems()
 		for k, v in pairs(items) do
 			if (v.base == "base_armor" and v:GetData("equip")) then
-				local durability = v:GetData("Durability", 100)
+				local durability = v:GetData("Durability", 4000)
 				if (durability > 0) then
 					v:SetData("Durability", durability - (damageTaken/2))
 				else
