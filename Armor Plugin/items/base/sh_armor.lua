@@ -231,13 +231,13 @@ ITEM.functions.Equip = {
 				client:SetNetVar("resistance", false)
 			end
 			
-			client:SetNWFloat("dmg_bullet", item.damage[0.00001])
-			client:SetNWFloat("dmg_slash", item.damage[0.00001])
-			client:SetNWFloat("dmg_shock", item.damage[0.0001])
-			client:SetNWFloat("dmg_burn", item.damage[0.0001])
-			client:SetNWFloat("dmg_radiation", item.damage[0.0001])
-			client:SetNWFloat("dmg_acid", item.damage[0.00001])
-			client:SetNWFloat("dmg_explosive", item.damage[0.00001])
+			client:SetNWFloat("dmg_bullet", item.damage[1])
+			client:SetNWFloat("dmg_slash", item.damage[2])
+			client:SetNWFloat("dmg_shock", item.damage[3])
+			client:SetNWFloat("dmg_burn", item.damage[4])
+			client:SetNWFloat("dmg_radiation", item.damage[4])
+			client:SetNWFloat("dmg_acid", item.damage[6])
+			client:SetNWFloat("dmg_explosive", item.damage[7])
 			
 			item.player:EmitSound("snd_jack_clothequip.wav", 80)
 			armorPlayer(item.player, item.player, item.armorAmount)
